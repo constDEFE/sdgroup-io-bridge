@@ -447,14 +447,16 @@ export declare class ConverterService extends Service {
 	convert(options: ConverterOptions): Promise<{ amount: string }>;
 }
 export declare type SupportedServices =
-	| typeof AuthService
 	| typeof ApplicationService
+	| typeof AuthService
+	| typeof BridgeService
 	| typeof ConverterService
-	| typeof WalletService
+	| typeof FeeService
 	| typeof NetworkService
-	| typeof TokenService
 	| typeof OfferService
 	| typeof PaymentsService
+	| typeof TokenService
+	| typeof WalletService
 	| typeof WalletBalanceService;
 declare class BridgeClient {
 	private readonly config;
