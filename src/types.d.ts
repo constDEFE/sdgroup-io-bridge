@@ -193,7 +193,7 @@ export declare interface TransferOptions {
 	to: string;
 	amount: string;
 }
-export declare class FeeSerice {
+export declare class FeeService {
 	/**
 	 * Asynchronously gets the fee rate.
 	 * @async
