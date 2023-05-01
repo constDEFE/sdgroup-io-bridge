@@ -6,8 +6,8 @@ import { useEffect, useState } from "react";
 import { merge, switchMap } from "rxjs";
 
 export const useBridgeState = <S>(
-	method: (params: CallbackParams) => Promise<S>,
 	client: InstanceType<typeof BridgeClient>,
+	method: (params: CallbackParams) => Promise<S>,
 	initialState?: S | (() => S),
 	deps: DependencyList = []
 ): [S, Dispatch<SetStateAction<S>>] => {
