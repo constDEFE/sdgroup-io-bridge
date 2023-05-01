@@ -1,5 +1,6 @@
 export { BridgeClient as default } from "./BridgeClient";
 export { useDestroy } from "./hooks/useDestroy";
+export { useBridgeState } from "./hooks/useBridgeState";
 export { ApplicationService } from "./services/application.service";
 export { AuthService } from "./services/auth.service";
 export { BridgeService } from "./services/bridge.service";

@@ -507,14 +507,14 @@ export declare interface CallbackParams {
 /**
  * Hook that connects to the BridgeClient and executes the given method with the selected application.
  * @template S - The type of the state.
- * @param client - The BridgeClient to connect to.
+ * @param client - The BridgeClient instance to connect to.
  * @param method - The method to execute with the selected application.
  * @param initialState - The initial state to use, defaults to undefined.
  * @param deps - The list of dependencies to watch for changes, defaults to an empty array.
  * @return The state and the function to update it.
  */
 export declare const useBridgeState: <S>(
-	client: InstanceType<typeof BridgeClient>,
+	client: BridgeClient,
 	method: (params: CallbackParams) => Promise<S>,
 	initialState?: S | (() => S),
 	deps?: DependencyList
